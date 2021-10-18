@@ -1,0 +1,7 @@
+//*-Skip login for now-*
+
+/*create a button that when pressed will (go to another screen for customization (later))
+add the item on the button to a list
+be able to check their "list" and edit said list (I don't want this item anymore)
+Submit the list to the database -- unsure how to do this..
+*/
