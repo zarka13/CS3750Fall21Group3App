@@ -6,18 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/order_1"
-        android:layout_width="286dp"
-        android:layout_height="84dp"
-        android:background="@color/offwhite"
-        android:text="Order Burger"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textIsSelectable="false"
-        android:textSize="24sp"
+    <ScrollView
+        android:id="@+id/scroll_order_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/offwhite"
+            android:orientation="vertical" >
+
+                <ImageButton
+                    android:layout_height="100dp"
+                    android:layout_width="250dp"
+                />
+                <ImageButton
+                    android:layout_height="100dp"
+                    android:layout_width="250dp"
+                />
+                <ImageButton
+                android:layout_height="100dp"
+                android:layout_width="250dp"
+                />
+                <ImageButton
+                android:layout_height="100dp"
+                android:layout_width="250dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/food_bros_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/icon_content_description"
+        app:layout_constraintBottom_toTopOf="@+id/scroll_order_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 </androidx.constraintlayout.widget.ConstraintLayout>

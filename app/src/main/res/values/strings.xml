@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CustomerApp</string>
+    <string name="icon_content_description">Image of a food truck delivering food</string>
 </resources>
