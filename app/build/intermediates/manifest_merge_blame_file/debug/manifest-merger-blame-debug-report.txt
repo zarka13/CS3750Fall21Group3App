@@ -26,8 +26,8 @@
 18        android:supportsRtl="true"
 18-->C:\Users\Jessica\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:10:9-35
 19        android:testOnly="true"
-20        android:theme="@style/Theme.CustomerApp" >
-20-->C:\Users\Jessica\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:11:9-49
+20        android:theme="@style/Theme.Design.Light.NoActionBar" >
+20-->C:\Users\Jessica\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:11:9-62
 21        <activity
 21-->C:\Users\Jessica\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:12:9-20:20
 22            android:name="CS3750.Fall21.MainActivity"

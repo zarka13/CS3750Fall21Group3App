@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Jessica\\CS3750Fall21Group3App\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\Jessica\\CS3750Fall21Group3App\\app\\build\\intermediates\\merged_res\\debug\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\Jessica\\CS3750Fall21Group3App\\app\\src\\main\\res\\navigation\\nav_graph.xml"
+    },
+    {
         "merged": "C:\\Users\\Jessica\\CS3750Fall21Group3App\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Jessica\\CS3750Fall21Group3App\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },

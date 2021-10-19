@@ -17,7 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.CustomerApp" >
+        android:theme="@style/Theme.Design.Light.NoActionBar" >
         <activity
             android:name="CS3750.Fall21.MainActivity"
             android:exported="true" >
