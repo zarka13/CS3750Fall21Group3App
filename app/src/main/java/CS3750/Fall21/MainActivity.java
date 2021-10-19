@@ -78,6 +78,7 @@ ArrayList<String> OrderList = new ArrayList<String>();
                 else if (!(OrderList.isEmpty())) {
                     while (OrderList.size() > i) {
                         s += OrderList.get(i) + "%n";
+                        i++;
                     }
                     cust_order_txt.setTextColor(getResources().getColor(R.color.black));
                     cust_order_txt.setText(s);
