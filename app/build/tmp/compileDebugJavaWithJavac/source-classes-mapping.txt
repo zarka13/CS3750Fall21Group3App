@@ -1,0 +1,4 @@
+CS3750/Fall21/BuildConfig.java
+ CS3750.Fall21.BuildConfig
+CS3750/Fall21/MainActivity.java
+ CS3750.Fall21.MainActivity
