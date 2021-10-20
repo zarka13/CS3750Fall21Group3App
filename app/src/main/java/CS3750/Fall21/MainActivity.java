@@ -63,7 +63,8 @@ ArrayList<String> OrderList = new ArrayList<String>();
                 /*android.content.Intent intent =
                 new android.content.Intent(this,
                 ShowCustOrderActivity.class); //issue here with class name
-                startActivity(intent);*/
+                startActivity(intent);
+                Make a fragment - like a class but has UI and code behind it*/
                 android.widget.MultiAutoCompleteTextView cust_order_txt =
                         (android.widget.MultiAutoCompleteTextView)
                                 findViewById(R.id.show_cust_order_txt);
@@ -73,11 +74,9 @@ ArrayList<String> OrderList = new ArrayList<String>();
                     cust_order_txt.setTextColor(getResources().getColor(R.color.red));
                     cust_order_txt.setText("There isn't an item ordered yet!");
                 }
-                //Issue where after testing above check, once adding items to test again, below
-                //code does not run, it just crashes..?
                 else if (!(OrderList.isEmpty())) {
                     while (OrderList.size() > i) {
-                        s += OrderList.get(i) + "%n";
+                        s += OrderList.get(i) + "\n";
                         i++;
                     }
                     cust_order_txt.setTextColor(getResources().getColor(R.color.black));
