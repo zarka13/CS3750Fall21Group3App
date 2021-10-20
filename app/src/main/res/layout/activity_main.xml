@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/offwhite"
     tools:context=".MainActivity">
 
     <ScrollView
         android:id="@+id/scroll_order_view"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="335dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,27 +25,48 @@
 
             <ImageButton
                 android:id="@+id/order_item_1"
-                android:layout_width="250dp"
+                android:layout_width="380dp"
                 android:layout_height="100dp"
-                android:contentDescription='"Item 1 to order: Burger"' />
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:adjustViewBounds="true"
+                android:background="@color/light_blue"
+                android:contentDescription='"Item 1 to order: Burger"'
+                android:elevation="15dp"
+                android:foreground="@drawable/cheese_burger_clip_art_small"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"/>
 
             <ImageButton
                 android:id="@+id/order_item_2"
-                android:layout_width="250dp"
+                android:layout_width="380dp"
                 android:layout_height="100dp"
-                android:contentDescription='"Item 2 to order: Shake"' />
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/light_blue"
+                android:contentDescription='"Item 2 to order: Shake"'
+                android:foreground="@drawable/shake_clip_art" />
 
             <ImageButton
                 android:id="@+id/order_item_3"
-                android:layout_width="250dp"
+                android:layout_width="380dp"
                 android:layout_height="100dp"
-                android:contentDescription='"Item 3 to order: Fries"' />
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/light_blue"
+                android:contentDescription='"Item 3 to order: Fries"'
+                android:foreground="@drawable/fries_clip_art" />
 
             <ImageButton
                 android:id="@+id/order_item_4"
-                android:layout_width="250dp"
+                android:layout_width="380dp"
                 android:layout_height="100dp"
-                android:contentDescription='"Item 4 to order: Pop"' />
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/light_blue"
+                android:contentDescription='"Item 4 to order: Pop"'
+                android:foreground="@drawable/soda_clip_art" />
+
         </LinearLayout>
     </ScrollView>
 
@@ -57,14 +79,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@drawable/food_truck_clip_art" />
 
     <ImageButton
         android:id="@+id/show_order_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="74dp"
+        android:layout_height="76dp"
         android:layout_marginTop="34dp"
+        android:background="@color/black"
         android:contentDescription='"Show current order list"'
+        android:foreground="@android:drawable/star_big_off"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.845"
@@ -77,6 +101,7 @@
         android:id="@+id/show_cust_order_txt"
         android:layout_width="236dp"
         android:layout_height="119dp"
+        android:background="@color/white"
         android:clickable="false"
         android:contentDescription='"Shows the customer order"'
         android:editable="false"
