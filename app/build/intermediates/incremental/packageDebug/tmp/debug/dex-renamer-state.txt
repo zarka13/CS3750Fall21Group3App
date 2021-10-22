@@ -1,12 +1,12 @@
-#Tue Oct 19 18:11:35 MDT 2021
-path.3=6/classes.dex
-path.2=9/classes.dex
+#Thu Oct 21 19:55:44 MDT 2021
+path.3=9/classes.dex
+path.2=6/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex
-base.3=C\:\\Users\\Jessica\\CS3750Fall21Group3App\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.2=C\:\\Users\\Jessica\\CS3750Fall21Group3App\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
-base.1=C\:\\Users\\Jessica\\CS3750Fall21Group3App\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.0=C\:\\Users\\Jessica\\CS3750Fall21Group3App\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.3=C\:\\Users\\austi\\Documents\\School\\CS 3750\\CS3750Fall21Group3App\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+base.2=C\:\\Users\\austi\\Documents\\School\\CS 3750\\CS3750Fall21Group3App\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.1=C\:\\Users\\austi\\Documents\\School\\CS 3750\\CS3750Fall21Group3App\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=C\:\\Users\\austi\\Documents\\School\\CS 3750\\CS3750Fall21Group3App\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex

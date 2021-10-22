@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "CS3750.Fall21",
+  "applicationId": "cs3750.Fall21",
   "variantName": "debug",
   "elements": [
     {

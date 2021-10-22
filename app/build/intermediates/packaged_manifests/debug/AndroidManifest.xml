@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="CS3750.Fall21"
+    package="cs3750.Fall21"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -19,7 +19,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.Design.Light.NoActionBar" >
         <activity
-            android:name="CS3750.Fall21.MainActivity"
+            android:name="cs3750.fall21.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

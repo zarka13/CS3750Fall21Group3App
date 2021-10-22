@@ -1,4 +1,4 @@
-CS3750.Fall21
+cs3750.fall21
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -1175,6 +1175,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color light_blue
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1808,11 +1809,14 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable cheese_burger_clip_art_small
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable food_truck_clip_art
+drawable fries_clip_art
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -1854,6 +1858,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable shake_clip_art
+drawable soda_clip_art
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
