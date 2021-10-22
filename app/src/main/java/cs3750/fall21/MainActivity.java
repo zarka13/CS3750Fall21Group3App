@@ -84,6 +84,16 @@ Order OrderList = new Order();
             }
         });
 
+        //Image Button "clear order list" onClickListener
+        ImageButton clear_order = findViewById(R.id.clear_order_list);
+        clear_order.setOnClickListener (new View.OnClickListener() {
+            public void onClick(View v){
+                //Do something in response to button click
+                OrderList.clearOrder();
+                updateText();
+            }
+        });
+
 
 
     }
@@ -95,7 +105,11 @@ Order OrderList = new Order();
                 findViewById(R.id.show_cust_order_txt);
         String s = "";
         int i = 0;
-        if (OrderList.orderSize() > 0) {
+        if (OrderList.orderSize() == 0) {
+            cust_order_txt.setTextColor(getResources().getColor(R.color.red));
+            cust_order_txt.setText("Order Cleared.");
+        }
+        else if (OrderList.orderSize() > 0) {
             while (OrderList.orderSize() > i) {
                 s += OrderList.getItem(i) + "\n";
                 i++;

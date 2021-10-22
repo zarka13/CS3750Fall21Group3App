@@ -24,6 +24,9 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageButton clearOrderList;
+
+  @NonNull
   public final ImageView foodBrosIcon;
 
   @NonNull
@@ -50,12 +53,14 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final ImageButton showOrderList;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView foodBrosIcon,
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ImageButton clearOrderList, @NonNull ImageView foodBrosIcon,
       @NonNull LinearLayout linearLayoutOrders, @NonNull ImageButton orderItem1,
       @NonNull ImageButton orderItem2, @NonNull ImageButton orderItem3,
       @NonNull ImageButton orderItem4, @NonNull ScrollView scrollOrderView,
       @NonNull MultiAutoCompleteTextView showCustOrderTxt, @NonNull ImageButton showOrderList) {
     this.rootView = rootView;
+    this.clearOrderList = clearOrderList;
     this.foodBrosIcon = foodBrosIcon;
     this.linearLayoutOrders = linearLayoutOrders;
     this.orderItem1 = orderItem1;
@@ -94,6 +99,12 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.clear_order_list;
+      ImageButton clearOrderList = ViewBindings.findChildViewById(rootView, id);
+      if (clearOrderList == null) {
+        break missingId;
+      }
+
       id = R.id.food_bros_icon;
       ImageView foodBrosIcon = ViewBindings.findChildViewById(rootView, id);
       if (foodBrosIcon == null) {
@@ -148,9 +159,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, foodBrosIcon, linearLayoutOrders,
-          orderItem1, orderItem2, orderItem3, orderItem4, scrollOrderView, showCustOrderTxt,
-          showOrderList);
+      return new ActivityMainBinding((ConstraintLayout) rootView, clearOrderList, foodBrosIcon,
+          linearLayoutOrders, orderItem1, orderItem2, orderItem3, orderItem4, scrollOrderView,
+          showCustOrderTxt, showOrderList);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
