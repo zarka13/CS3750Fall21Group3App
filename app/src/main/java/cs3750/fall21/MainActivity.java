@@ -8,9 +8,10 @@ import android.widget.ImageButton;
 import android.widget.MultiAutoCompleteTextView;
 
 import java.util.ArrayList;
+import cs3750.fall21.Order;
 
 public class MainActivity extends AppCompatActivity {
-ArrayList<String> OrderList = new ArrayList<>();
+Order OrderList = new Order();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,8 @@ ArrayList<String> OrderList = new ArrayList<>();
         img_btn_1.setOnClickListener (new View.OnClickListener() {
             public void onClick(View v){
                 //Do something in response to button click
-                OrderList.add("Burger");
+                OrderList.addItem("Burger");
+                updateText();
             }
         });
 
@@ -31,7 +33,8 @@ ArrayList<String> OrderList = new ArrayList<>();
         img_btn_2.setOnClickListener (new View.OnClickListener() {
             public void onClick(View v){
                 //Do something in response to button click
-                OrderList.add("Shake");
+                OrderList.addItem("Shake");
+                updateText();
             }
         });
 
@@ -40,7 +43,8 @@ ArrayList<String> OrderList = new ArrayList<>();
         img_btn_3.setOnClickListener (new View.OnClickListener() {
             public void onClick(View v){
                 //Do something in response to button click
-                OrderList.add("Fries");
+                OrderList.addItem("Fries");
+                updateText();
             }
         });
 
@@ -49,7 +53,8 @@ ArrayList<String> OrderList = new ArrayList<>();
         img_btn_4.setOnClickListener (new View.OnClickListener() {
             public void onClick(View v){
                 //Do something in response to button click
-                OrderList.add("Pop");
+                OrderList.addItem("Pop");
+                updateText();
             }
         });
 
@@ -62,13 +67,15 @@ ArrayList<String> OrderList = new ArrayList<>();
                                 findViewById(R.id.show_cust_order_txt);
                 String s = "";
                 int i = 0;
-                if (OrderList.isEmpty()) {
+                if (OrderList.orderSize() == 0) {
                     cust_order_txt.setTextColor(getResources().getColor(R.color.red));
                     cust_order_txt.setText("There isn't an item ordered yet!");
                 }
-                else if (!(OrderList.isEmpty())) {
-                    while (OrderList.size() > i) {
-                        s += OrderList.get(i) + "\n";
+                else if (OrderList.orderSize() > 0) {
+                    s += "Order Sent: \n";
+
+                    while (OrderList.orderSize() > i) {
+                        s += OrderList.getItem(i) + "\n";
                         i++;
                     }
                     cust_order_txt.setTextColor(getResources().getColor(R.color.black));
@@ -77,5 +84,24 @@ ArrayList<String> OrderList = new ArrayList<>();
             }
         });
 
+
+
+    }
+
+    // Should make it so now any button press will update the list of items
+    private void updateText() {
+        //Do something in response to button press
+        MultiAutoCompleteTextView cust_order_txt =
+                findViewById(R.id.show_cust_order_txt);
+        String s = "";
+        int i = 0;
+        if (OrderList.orderSize() > 0) {
+            while (OrderList.orderSize() > i) {
+                s += OrderList.getItem(i) + "\n";
+                i++;
+            }
+            cust_order_txt.setTextColor(getResources().getColor(R.color.black));
+            cust_order_txt.setText(s);
+        }
     }
 }

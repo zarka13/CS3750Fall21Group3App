@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\austi\\Documents\\School\\CS 3750\\CS3750Fall21Group3App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w1240dp-v13\\values-w1240dp-v13.xml",
+            "outputFile": "C:\\Users\\Austin\\Desktop\\CS3030\\Android\\CS3750Fall21Group3App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w1240dp-v13\\values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\austi\\Documents\\School\\CS 3750\\CS3750Fall21Group3App\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "source": "C:\\Users\\Austin\\Desktop\\CS3030\\Android\\CS3750Fall21Group3App\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "8",
