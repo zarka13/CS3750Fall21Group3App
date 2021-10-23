@@ -3,9 +3,12 @@ package cs3750.fall21;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.MultiAutoCompleteTextView;
+
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import cs3750.fall21.Order;
@@ -62,6 +65,7 @@ Order OrderList = new Order();
         ImageButton show_order = findViewById(R.id.show_order_list);
         show_order.setOnClickListener (new View.OnClickListener() {
             public void onClick(View v) {
+
                 //Do something in response to button press
                 MultiAutoCompleteTextView cust_order_txt =
                                 findViewById(R.id.show_cust_order_txt);
@@ -93,8 +97,6 @@ Order OrderList = new Order();
                 updateText();
             }
         });
-
-
 
     }
 

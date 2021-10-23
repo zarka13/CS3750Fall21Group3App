@@ -10,4 +10,10 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="item_1_to_order_burger">Item 1 to order: Burger</string>
+    <string name="item_2_to_order_shake">Item 2 to order: Shake</string>
+    <string name="item_3_to_order_fries">Item 3 to order: Fries</string>
+    <string name="item_4_to_order_pop">Item 4 to order: Pop</string>
+    <string name="show_current_order_list">Show current order list</string>
+    <string name="clear_current_order_list">Clear current order list</string>
 </resources>

@@ -7,14 +7,34 @@
     android:background="@color/offwhite"
     tools:context=".MainActivity">
 
-    <ScrollView
-        android:id="@+id/scroll_order_view"
-        android:layout_width="match_parent"
-        android:layout_height="335dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/food_bros_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/icon_content_description"
+            app:srcCompat="@drawable/food_truck_clip_art" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_order_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/show_cust_order_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
 
         <LinearLayout
             android:id="@+id/linear_layout_orders"
@@ -32,7 +52,7 @@
                 android:layout_marginBottom="10dp"
                 android:adjustViewBounds="true"
                 android:background="@color/light_blue"
-                android:contentDescription='"Item 1 to order: Burger"'
+                android:contentDescription="@string/item_1_to_order_burger"
                 android:elevation="15dp"
                 android:foreground="@drawable/cheese_burger_clip_art_small"
                 android:scaleType="fitCenter" />
@@ -44,7 +64,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:background="@color/light_blue"
-                android:contentDescription='"Item 2 to order: Shake"'
+                android:contentDescription="@string/item_2_to_order_shake"
                 android:foreground="@drawable/shake_clip_art" />
 
             <ImageButton
@@ -54,7 +74,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:background="@color/light_blue"
-                android:contentDescription='"Item 3 to order: Fries"'
+                android:contentDescription="@string/item_3_to_order_fries"
                 android:foreground="@drawable/fries_clip_art" />
 
             <ImageButton
@@ -64,51 +84,22 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:background="@color/light_blue"
-                android:contentDescription='"Item 4 to order: Pop"'
+                android:contentDescription="@string/item_4_to_order_pop"
                 android:foreground="@drawable/soda_clip_art" />
 
         </LinearLayout>
     </ScrollView>
 
-    <ImageView
-        android:id="@+id/food_bros_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/icon_content_description"
-        app:layout_constraintBottom_toTopOf="@+id/scroll_order_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/food_truck_clip_art" />
-
-    <ImageButton
-        android:id="@+id/clear_order_list"
-        android:layout_width="74dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="291dp"
-        android:layout_marginTop="639dp"
-        android:background="@color/black"
-        android:contentDescription='"Clear current order list"'
-        android:foreground="@android:drawable/ic_delete"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@android:drawable/ic_delete" />
-
     <MultiAutoCompleteTextView
         android:id="@+id/show_cust_order_txt"
         android:layout_width="236dp"
         android:layout_height="119dp"
+        android:layout_marginStart="8dp"
         android:background="@color/white"
         android:clickable="false"
-        android:contentDescription='"Shows the customer order"'
         android:editable="false"
+        android:text="Order:"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/show_order_list"
-        app:layout_constraintHorizontal_bias="0.246"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scroll_order_view"
         app:layout_constraintVertical_bias="0.456" />
@@ -117,13 +108,31 @@
         android:id="@+id/show_order_list"
         android:layout_width="74dp"
         android:layout_height="76dp"
-        android:layout_marginStart="291dp"
-        android:layout_marginTop="556dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/black"
-        android:contentDescription='"Show current order list"'
+        android:contentDescription="@string/show_current_order_list"
         android:foreground="@android:drawable/star_big_off"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/clear_order_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/show_cust_order_txt"
+        app:layout_constraintTop_toBottomOf="@+id/scroll_order_view"
         app:srcCompat="@android:drawable/btn_star" />
+
+    <ImageButton
+        android:id="@+id/clear_order_list"
+        android:layout_width="74dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/black"
+        android:contentDescription="@string/clear_current_order_list"
+        android:foreground="@android:drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/show_order_list"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/show_order_list"
+        app:layout_constraintTop_toBottomOf="@+id/show_order_list"
+        app:srcCompat="@android:drawable/ic_delete" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

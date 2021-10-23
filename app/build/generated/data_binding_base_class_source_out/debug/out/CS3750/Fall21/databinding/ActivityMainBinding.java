@@ -4,6 +4,7 @@ package cs3750.fall21.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -28,6 +29,9 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final ImageView foodBrosIcon;
+
+  @NonNull
+  public final FrameLayout frameLayout;
 
   @NonNull
   public final LinearLayout linearLayoutOrders;
@@ -55,13 +59,15 @@ public final class ActivityMainBinding implements ViewBinding {
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageButton clearOrderList, @NonNull ImageView foodBrosIcon,
-      @NonNull LinearLayout linearLayoutOrders, @NonNull ImageButton orderItem1,
-      @NonNull ImageButton orderItem2, @NonNull ImageButton orderItem3,
-      @NonNull ImageButton orderItem4, @NonNull ScrollView scrollOrderView,
-      @NonNull MultiAutoCompleteTextView showCustOrderTxt, @NonNull ImageButton showOrderList) {
+      @NonNull FrameLayout frameLayout, @NonNull LinearLayout linearLayoutOrders,
+      @NonNull ImageButton orderItem1, @NonNull ImageButton orderItem2,
+      @NonNull ImageButton orderItem3, @NonNull ImageButton orderItem4,
+      @NonNull ScrollView scrollOrderView, @NonNull MultiAutoCompleteTextView showCustOrderTxt,
+      @NonNull ImageButton showOrderList) {
     this.rootView = rootView;
     this.clearOrderList = clearOrderList;
     this.foodBrosIcon = foodBrosIcon;
+    this.frameLayout = frameLayout;
     this.linearLayoutOrders = linearLayoutOrders;
     this.orderItem1 = orderItem1;
     this.orderItem2 = orderItem2;
@@ -108,6 +114,12 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.food_bros_icon;
       ImageView foodBrosIcon = ViewBindings.findChildViewById(rootView, id);
       if (foodBrosIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.frameLayout;
+      FrameLayout frameLayout = ViewBindings.findChildViewById(rootView, id);
+      if (frameLayout == null) {
         break missingId;
       }
 
@@ -160,8 +172,8 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, clearOrderList, foodBrosIcon,
-          linearLayoutOrders, orderItem1, orderItem2, orderItem3, orderItem4, scrollOrderView,
-          showCustOrderTxt, showOrderList);
+          frameLayout, linearLayoutOrders, orderItem1, orderItem2, orderItem3, orderItem4,
+          scrollOrderView, showCustOrderTxt, showOrderList);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
