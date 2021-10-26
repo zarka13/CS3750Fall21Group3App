@@ -6,6 +6,7 @@ import java.util.ArrayList;
 // *Currently, yes, this is a bit of a "waste" but it's meant to serve as the foundation for later changes and functionality - Austin 2
 public class Order {
 
+
     private ArrayList<String> OrderItems;
 
     public Order() {
@@ -13,9 +14,7 @@ public class Order {
     }
 
     public Order(ArrayList<String> list) {
-        for (int i = 0; i < list.size(); i++) {
-            OrderItems.add(list.get(i));
-        }
+        OrderItems.addAll(list);
     }
 
     public void addItem(String item) {

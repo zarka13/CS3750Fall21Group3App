@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\austi\.gradle\caches\transforms-3\aedac3ef7d5f2c617ead8656bf92c449\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\austi\.gradle\caches\transforms-3\e84b042f48f9f14485261c47d99dc9c6\transformed\navigation-ui-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\austi\.gradle\caches\transforms-3\f794c157ce27c216c504b2261e60ef5d\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
@@ -44,20 +44,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\austi\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\austi\.gradle\caches\transforms-3\eb3bd80f829817dc46cef00554f9b4ab\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\austi\.gradle\caches\transforms-3\998ecad2e598076d0444e5b886cc28b2\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\austi\.gradle\caches\transforms-3\dad45be7fb3d40cd3f820bd1d6623c5b\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
 		ADDED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:3:5-28
 		INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:2:11-69
@@ -101,6 +101,10 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
 		ADDED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:18:27-74
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:23:5-66
+	android:name
+		ADDED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml:23:22-64
 uses-sdk
 INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\austi\Documents\School\CS 3750\CS3750Fall21Group3App\app\src\main\AndroidManifest.xml

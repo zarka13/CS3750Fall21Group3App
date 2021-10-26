@@ -10,6 +10,7 @@ import android.widget.MultiAutoCompleteTextView;
 
 import com.google.gson.Gson;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import cs3750.fall21.Order;
 
@@ -21,12 +22,13 @@ Order OrderList = new Order();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         //Image Button 1 onClickListener
         ImageButton img_btn_1 = findViewById(R.id.order_item_1);
         img_btn_1.setOnClickListener (new View.OnClickListener() {
             public void onClick(View v){
                 //Do something in response to button click
-                OrderList.addItem("Burger");
+                OrderList.addItem("Hamburger");
                 updateText();
             }
         });
@@ -66,6 +68,9 @@ Order OrderList = new Order();
         show_order.setOnClickListener (new View.OnClickListener() {
             public void onClick(View v) {
 
+                String json = new Gson().toJson(OrderList);
+                Log.d("test", "json convert: " + json);
+
                 //Do something in response to button press
                 MultiAutoCompleteTextView cust_order_txt =
                                 findViewById(R.id.show_cust_order_txt);
@@ -77,6 +82,26 @@ Order OrderList = new Order();
                 }
                 else if (OrderList.orderSize() > 0) {
                     s += "Order Sent: \n";
+
+                    HttpClient client = new HttpClient();
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            try {
+                                String insertOrderResponse = client.insertOrder(OrderList);
+                                Log.d("test", "insert Order response: " + insertOrderResponse);
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+
+                            try {
+                                String insertResponse = client.insertOrderItems(OrderList);
+                                Log.d("test", "insert response: " + insertResponse);
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }).start();
 
                     while (OrderList.orderSize() > i) {
                         s += OrderList.getItem(i) + "\n";
